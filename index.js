@@ -68,16 +68,16 @@ export default class Walk extends Component {
     if (event.eventType === 'keydown') {
       console.log(event);
       switch (event.code) {
-        case 'KeyW':
+        case 'ArrowUp':
           this.walk(DIRECTION.FORWARD);
           break;
-        case 'KeyA':
+        case 'ArrowLeft':
           this.walk(DIRECTION.LEFT);
           break;
-        case 'KeyS':
+        case 'ArrowDown':
           this.walk(DIRECTION.BACKWARD);
           break;
-        case 'KeyD':
+        case 'ArrowRight':
           this.walk(DIRECTION.RIGHT);
           break;
         default:
